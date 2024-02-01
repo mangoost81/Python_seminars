@@ -43,18 +43,18 @@
 # print (a // 2 + a % 2 + b // 2 + b % 2 + (c + 1) // 2 ) 
 
 
-# n = 555
+n = 555
 
-# # Введите ваше решение ниже
-# a = str(n)
-# summ = 0
-# for i in a:
-#     summ += int(i)
+# Введите ваше решение ниже
+a = str(n)
+summ = 0
+for i in a:
+    summ += int(i)
 
-# print(summ)
+print(summ)
 
 
-# n = 385916
+n = "385916"
 
 # part_1 = str(n//1000)
 # part_2 = str(n%1000)
@@ -66,9 +66,9 @@
 # for i in part_2:
 #     sum2 += int(i)
 
-# if sum1 == sum2:
-#     print("yes")
-# else:
-#     print("no")
+if int(n[0])+int(n[1])+int(n[2]) == int(n[-1])+int(n[-2])+int(n[-3]):
+    print("yes")
+else:
+    print("no")
 
 
