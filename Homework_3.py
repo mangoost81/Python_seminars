@@ -35,8 +35,19 @@
 # print(min(a, key=lambda c:abs(c-b)))
 
 
-english = {1:["A E I O U L N S T R"], 2:["D G"], 3:["B C M P"],
-           4:["F H V W Y"], 5:["K"], 8:["J X"], 10:["Q Z"]}
-russian = {1:["А В Е И Н О Р С Т"], 2:["Д К Л М П У"], 3:["Б Г Ё Ь Я"],
-            4:["Й Ы"], 5:["Ж З Х Ц Ч"], 8:["Ш Э Ю"], 10:["Ф Щ Ъ"]}
-print(english[4])
+english = {1:"AEIOULNSTR", 2:"DG", 3:"BCMP",
+           4:"FHVWY", 5:"K", 8:"JX", 10:"QZ"}
+
+russian = {1:"АВЕИНОРСТ", 2:"ДКЛМПУ", 3:"БГЁЬЯ",
+            4:"ЙЫ", 5:"ЖЗХЦЧ", 8:"ШЭЮ", 10:"ФЩЪ"}
+
+
+word = "Derrim"
+print(english[1])
+
+for value in english.values():
+    for i in value:
+        print(i, end=" ") 
+    
+
+
