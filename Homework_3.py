@@ -35,19 +35,39 @@
 # print(min(a, key=lambda c:abs(c-b)))
 
 
-english = {1:"AEIOULNSTR", 2:"DG", 3:"BCMP",
-           4:"FHVWY", 5:"K", 8:"JX", 10:"QZ"}
+# english = {1:"AEIOULNSTR", 2:"DG", 3:"BCMP",
+#            4:"FHVWY", 5:"K", 8:"JX", 10:"QZ"}
 
-russian = {1:"АВЕИНОРСТ", 2:"ДКЛМПУ", 3:"БГЁЬЯ",
-            4:"ЙЫ", 5:"ЖЗХЦЧ", 8:"ШЭЮ", 10:"ФЩЪ"}
+# russian = {1:"АВЕИНОРСТ", 2:"ДКЛМПУ", 3:"БГЁЬЯ",
+#             4:"ЙЫ", 5:"ЖЗХЦЧ", 8:"ШЭЮ", 10:"ФЩЪ"}
+
+# Это с инвертированными ключами-значениями:
+english = {"AEIOULNSTR":1, "DG":2, "BCMP":3, 
+           "FHVWY":4, "K":5, "JX":8, "QZ":10} 
+
+russian = {"АВЕИНОРСТ":1, "ДКЛМПУ":2, "БГЁЬЯ":3, 
+            "ЙЫ":4, "ЖЗХЦЧ":5, "ШЭЮ":8, "ФЩЪ":10}
 
 
-word = "Derrim"
-print(english[1])
+word = "DErrim"
 
-for value in english.values():
-    for i in value:
-        print(i, end=" ") 
-    
 
+
+count = 0
+for letter in word:
+    for key in russian:
+        if letter.upper() in key:
+            count += russian.get(key)
+
+if count > 0:
+    print(count)
+
+count = 0
+for letter in word:
+    for key in english:
+        if letter.upper() in key:
+            count += english.get(key)
+
+if count > 0:
+    print(count)
 
