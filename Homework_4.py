@@ -27,11 +27,14 @@
 # Input: 5
 # Output: yes
 
-def LetsTry(num, d=2):
-    if d*d > num:
-        return True
-    elif num%d == 0:
-        return False
-    return LetsTry(num, d+1)
+# def LetsTry(num, d=2):
+#     if d*d > num:
+#         return True
+#     elif num%d == 0:
+#         return False
+#     return LetsTry(num, d+1)
     
-print(LetsTry(int(input("Insert coin "))))
+# print(LetsTry(int(input("Insert coin "))))
+
+import BeautifulSoup
+#import 
