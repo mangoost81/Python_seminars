@@ -36,5 +36,3 @@
     
 # print(LetsTry(int(input("Insert coin "))))
 
-import BeautifulSoup
-#import 
