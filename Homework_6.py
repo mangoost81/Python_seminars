@@ -29,3 +29,6 @@ while count < n-1:
     array.append(array[count]+d)
     count+=1
 print(*array,sep = "\n")
+for i in range(n):
+    j = a1 + i*d
+    print(j)
